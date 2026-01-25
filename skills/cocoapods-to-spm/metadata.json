@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "organization": "Capgo",
+  "date": "January 2026",
+  "abstract": "Complete guide for migrating Capacitor iOS projects from CocoaPods to Swift Package Manager (SPM). Covers hybrid approaches, troubleshooting common issues, and creating SPM-compatible plugins.",
+  "triggers": [
+    "cocoapods to spm",
+    "swift package manager",
+    "migrate to spm",
+    "remove cocoapods",
+    "spm capacitor",
+    "pod to spm"
+  ],
+  "references": [
+    "https://swift.org/package-manager",
+    "https://capacitorjs.com/docs/ios",
+    "https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "organization": "Capgo",
+  "date": "January 2026",
+  "abstract": "Guide to using Model Context Protocol (MCP) for Capacitor mobile development automation. Covers device management, app deployment, log streaming, screenshot capture, and automated testing.",
+  "triggers": [
+    "mcp capacitor",
+    "automate mobile",
+    "device control",
+    "programmatic testing",
+    "ai mobile development",
+    "mcp tools"
+  ],
+  "references": [
+    "https://modelcontextprotocol.io",
+    "https://github.com/modelcontextprotocol/sdk",
+    "https://capacitorjs.com/docs/cli"
+  ]
+}

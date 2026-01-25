@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "organization": "Capgo",
+  "date": "January 2026",
+  "abstract": "Complete guide to viewing and filtering device logs on iOS and Android. Covers Console.app, devicectl, simctl for iOS, and adb logcat for Android. Includes filtering techniques, crash log access, and MCP integration.",
+  "triggers": [
+    "device logs",
+    "view logs",
+    "adb logcat",
+    "console.app",
+    "ios logs",
+    "android logs",
+    "crash logs",
+    "debug logs"
+  ],
+  "references": [
+    "https://developer.apple.com/documentation/os/logging",
+    "https://developer.android.com/studio/debug/logcat",
+    "https://developer.apple.com/documentation/devicemanagement"
+  ]
+}

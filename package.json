@@ -1,0 +1,35 @@
+{
+  "name": "@capgo/capacitor-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for Capacitor mobile development",
+  "keywords": [
+    "capacitor",
+    "ionic",
+    "mobile",
+    "skills",
+    "agent",
+    "ai",
+    "claude",
+    "capgo"
+  ],
+  "homepage": "https://github.com/Cap-go/capacitor-skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cap-go/capacitor-skills.git"
+  },
+  "license": "MIT",
+  "author": "Capgo <support@capgo.app>",
+  "skills": [
+    "capacitor-plugins",
+    "capacitor-best-practices",
+    "capgo-live-updates",
+    "debugging-capacitor",
+    "ios-android-logs",
+    "capacitor-mcp",
+    "ionic-design",
+    "konsta-ui",
+    "tailwind-capacitor",
+    "safe-area-handling",
+    "cocoapods-to-spm"
+  ]
+}
