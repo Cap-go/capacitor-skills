@@ -7,6 +7,8 @@
   <h2><a href="https://capgo.app/consulting/?ref=repo_capgo_skills"> Missing a feature? We’ll build the plugin for you</a></h2>
 </div>
 
+> Formerly `@capgo/capacitor-skills` (and `Cap-go/capacitor-skills`). Links and redirects should continue to work.
+
 A collection of **22 skills** for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
 
 ## Compatibility
