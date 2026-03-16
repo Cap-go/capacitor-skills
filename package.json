@@ -1,21 +1,24 @@
 {
-  "name": "@capgo/capacitor-skills",
-  "version": "1.0.0",
-  "description": "Agent skills for Capacitor mobile development",
+  "name": "@capgo/capgo-skills",
+  "version": "1.1.0",
+  "description": "24 agent skills for Capacitor mobile development",
   "keywords": [
     "capacitor",
+    "capacitor-skills",
     "ionic",
     "mobile",
     "skills",
     "agent",
     "ai",
     "claude",
-    "capgo"
+    "capgo",
+    "capsec",
+    "security"
   ],
-  "homepage": "https://github.com/Cap-go/capacitor-skills",
+  "homepage": "https://github.com/Cap-go/capgo-skills",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Cap-go/capacitor-skills.git"
+    "url": "https://github.com/Cap-go/capgo-skills.git"
   },
   "license": "MIT",
   "author": "Capgo <support@capgo.app>",
@@ -23,6 +26,9 @@
     "capacitor-plugins",
     "capacitor-best-practices",
     "capgo-live-updates",
+    "capacitor-security",
+    "capacitor-testing",
+    "capacitor-ci-cd",
     "debugging-capacitor",
     "ios-android-logs",
     "capacitor-mcp",
@@ -30,6 +36,16 @@
     "konsta-ui",
     "tailwind-capacitor",
     "safe-area-handling",
-    "cocoapods-to-spm"
+    "capacitor-splash-screen",
+    "capacitor-push-notifications",
+    "capacitor-deep-linking",
+    "capacitor-offline-first",
+    "capacitor-keyboard",
+    "capacitor-performance",
+    "capacitor-accessibility",
+    "capacitor-app-store",
+    "cocoapods-to-spm",
+    "cordova-to-capacitor",
+    "framework-to-capacitor"
   ]
 }

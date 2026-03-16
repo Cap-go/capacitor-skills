@@ -1,11 +1,31 @@
 # Capacitor Agent Skills
 
-A collection of skills for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
+ <a href="https://capgo.app/"><img src='https://raw.githubusercontent.com/Cap-go/capgo/main/assets/capgo_banner.png' alt='Capgo - Instant updates for capacitor'/></a>
+
+<div align="center">
+  <h2><a href="https://capgo.app/?ref=repo_capgo_skills"> ➡️ Get Instant updates for your App with Capgo</a></h2>
+  <h2><a href="https://capgo.app/consulting/?ref=repo_capgo_skills"> Missing a feature? We’ll build the plugin for you</a></h2>
+</div>
+
+> Formerly `@capgo/capacitor-skills` (and `Cap-go/capacitor-skills`). Links and redirects should continue to work.
+
+A collection of **24 skills** for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
+
+## Compatibility
+
+| Plugin version | Capacitor compatibility | Maintained |
+| -------------- | ----------------------- | ---------- |
+| v8.\*.\*       | v8.\*.\*                | ✅          |
+| v7.\*.\*       | v7.\*.\*                | On demand   |
+| v6.\*.\*       | v6.\*.\*                | ❌          |
+| v5.\*.\*       | v5.\*.\*                | ❌          |
+
+> **Note:** The major version of this plugin follows the major version of Capacitor. Use the version that matches your Capacitor installation (e.g., plugin v8 for Capacitor 8). Only the latest major version is actively maintained.
 
 ## Installation
 
 ```bash
-npx skills add capgo/capacitor-skills
+npx skills add Cap-go/capgo-skills
 ```
 
 ## Available Skills
@@ -14,115 +34,164 @@ npx skills add capgo/capacitor-skills
 
 | Skill | Description |
 |-------|-------------|
-| [capacitor-plugins](./skills/capacitor-plugins) | Complete catalog of 80+ Capgo Capacitor plugins with use cases |
-| [capacitor-best-practices](./skills/capacitor-best-practices) | Best practices for Capacitor app development |
+| [capacitor-plugins](./skills/capacitor-plugins) | Complete catalog of 80+ Capgo Capacitor plugins |
+| [capacitor-best-practices](./skills/capacitor-best-practices) | Development best practices and patterns |
 | [capgo-live-updates](./skills/capgo-live-updates) | Deploy OTA updates instantly with Capgo |
+
+### Security
+
+| Skill | Description |
+|-------|-------------|
+| [capacitor-security](./skills/capacitor-security) | Security scanning with Capsec (63+ rules) |
+
+### Testing & CI/CD
+
+| Skill | Description |
+|-------|-------------|
+| [capacitor-testing](./skills/capacitor-testing) | Unit, integration, and E2E testing |
+| [capacitor-ci-cd](./skills/capacitor-ci-cd) | GitHub Actions, GitLab CI, Fastlane |
 
 ### Debugging & Tooling
 
 | Skill | Description |
 |-------|-------------|
-| [debugging-capacitor](./skills/debugging-capacitor) | Comprehensive debugging guide for Capacitor apps |
-| [ios-android-logs](./skills/ios-android-logs) | Getting device logs on iOS and Android |
-| [capacitor-mcp](./skills/capacitor-mcp) | MCP (Model Context Protocol) tools for Capacitor |
+| [debugging-capacitor](./skills/debugging-capacitor) | Debug iOS/Android apps |
+| [ios-android-logs](./skills/ios-android-logs) | Device log streaming |
+| [capacitor-mcp](./skills/capacitor-mcp) | MCP automation tools |
 
 ### UI & Design
 
 | Skill | Description |
 |-------|-------------|
-| [ionic-design](./skills/ionic-design) | Ionic Framework components for native-looking apps |
-| [konsta-ui](./skills/konsta-ui) | Konsta UI for pixel-perfect iOS/Material Design |
-| [tailwind-capacitor](./skills/tailwind-capacitor) | Tailwind CSS best practices for mobile apps |
-| [safe-area-handling](./skills/safe-area-handling) | Handle notch, Dynamic Island, and home indicator |
+| [ionic-design](./skills/ionic-design) | Ionic Framework components |
+| [konsta-ui](./skills/konsta-ui) | Konsta UI for Tailwind |
+| [tailwind-capacitor](./skills/tailwind-capacitor) | Tailwind CSS for mobile |
+| [safe-area-handling](./skills/safe-area-handling) | Notch, Dynamic Island, home indicator |
+| [capacitor-splash-screen](./skills/capacitor-splash-screen) | Splash screen configuration |
 
-### iOS Development
+### Features
 
 | Skill | Description |
 |-------|-------------|
-| [cocoapods-to-spm](./skills/cocoapods-to-spm) | Migrate from CocoaPods to Swift Package Manager |
+| [capacitor-push-notifications](./skills/capacitor-push-notifications) | FCM and APNs push notifications |
+| [capacitor-deep-linking](./skills/capacitor-deep-linking) | Universal links and app links |
+| [capacitor-offline-first](./skills/capacitor-offline-first) | Offline-first architecture |
+| [capacitor-keyboard](./skills/capacitor-keyboard) | Keyboard handling |
 
-## Skill Format
+### Performance & Accessibility
 
-Each skill contains:
-- `SKILL.md` - Agent instructions and guidelines
-- `metadata.json` - Skill metadata and references
-- `rules/` - Detailed rules and examples (optional)
+| Skill | Description |
+|-------|-------------|
+| [capacitor-performance](./skills/capacitor-performance) | Performance optimization |
+| [capacitor-accessibility](./skills/capacitor-accessibility) | Screen readers, WCAG compliance |
+
+### Deployment
+
+| Skill | Description |
+|-------|-------------|
+| [capacitor-app-store](./skills/capacitor-app-store) | App Store and Play Store submission |
+| [cocoapods-to-spm](./skills/cocoapods-to-spm) | Migrate to Swift Package Manager |
+
+### Migration
+
+| Skill | Description |
+|-------|-------------|
+| [cordova-to-capacitor](./skills/cordova-to-capacitor) | Migrate from Cordova/PhoneGap to Capacitor |
+| [framework-to-capacitor](./skills/framework-to-capacitor) | Integrate Next.js, React, Vue, Angular with Capacitor |
 
 ## Usage
 
-Skills activate automatically when agents detect relevant tasks. Example triggers:
+Skills activate automatically when agents detect relevant tasks:
 
-### Plugin Selection
-- "Which plugin should I use for biometric authentication?" → capacitor-plugins
-- "Add in-app purchases to my app" → capacitor-plugins
+### Security
+- "Run a security scan" → capacitor-security (Capsec)
+- "Check for vulnerabilities" → capacitor-security
 
-### Development Best Practices
-- "How do I optimize my Capacitor app?" → capacitor-best-practices
-- "Review my Capacitor code" → capacitor-best-practices
+### Testing & CI/CD
+- "Add unit tests" → capacitor-testing
+- "Set up GitHub Actions" → capacitor-ci-cd
 
-### Live Updates
-- "Set up OTA updates" → capgo-live-updates
-- "Deploy without app store" → capgo-live-updates
-- "Create a Capgo account" → capgo-live-updates
+### Features
+- "Add push notifications" → capacitor-push-notifications
+- "Implement deep linking" → capacitor-deep-linking
+- "Make app work offline" → capacitor-offline-first
 
-### Debugging
-- "Debug my app crashing on iOS" → debugging-capacitor
-- "Get the logs from my Android device" → ios-android-logs
-- "Set up MCP for mobile testing" → capacitor-mcp
+### Deployment
+- "Publish to App Store" → capacitor-app-store
+- "Submit to Play Store" → capacitor-app-store
 
-### UI Design
-- "Use Ionic components" → ionic-design
-- "Style my app with Tailwind" → tailwind-capacitor
-- "Add Konsta UI to my project" → konsta-ui
-- "Fix content under the notch" → safe-area-handling
+### Migration
+- "Migrate from Cordova" → cordova-to-capacitor
+- "Convert Next.js to mobile app" → framework-to-capacitor
+- "Add Capacitor to React app" → framework-to-capacitor
 
-### iOS Development
-- "Convert my CocoaPods to SPM" → cocoapods-to-spm
-- "Migrate to Swift Package Manager" → cocoapods-to-spm
+### UI/UX
+- "Fix keyboard issues" → capacitor-keyboard
+- "Configure splash screen" → capacitor-splash-screen
+- "Make app accessible" → capacitor-accessibility
 
-## Quick Start
+## Quick Start with Capgo
 
-### 1. Install Capgo CLI
+### 1. Create Account
+
+Go to **https://capgo.app** and sign up.
+
+### 2. Install CLI
 
 ```bash
 bun add -g @capgo/cli
-```
-
-### 2. Create Account & Initialize
-
-```bash
 capgo login
-capgo init
 ```
 
-### 3. Deploy Your First Update
+### 3. Initialize & Deploy
 
 ```bash
+capgo init
 bun run build
 capgo upload
 ```
 
+## Security Scanning with Capsec
+
+```bash
+# Scan for vulnerabilities
+bunx capsec scan
+
+# CI mode (fails on high/critical)
+bunx capsec scan --ci
+
+# Generate HTML report
+bunx capsec scan --output html --output-file security.html
+```
+
+Capsec detects **63+ security issues** including:
+- Hardcoded secrets and API keys
+- Insecure storage patterns
+- Network security issues
+- Platform-specific vulnerabilities
+- Authentication weaknesses
+
+Learn more: **https://capacitor-sec.dev**
+
 ## About Capgo
 
-[Capgo](https://capgo.app) provides live updates and 80+ open-source plugins for Capacitor apps.
-
-**Live Updates**: Deploy JavaScript/HTML/CSS changes instantly without app store review.
-
-**Plugins**: Native functionality for authentication, media, payments, sensors, and more.
-
-**Get Started**: https://capgo.app
+[Capgo](https://capgo.app) provides:
+- **Live Updates**: Deploy JS/HTML/CSS instantly without app store review
+- **80+ Plugins**: Native functionality for authentication, media, payments, sensors
+- **Capsec**: Security scanning for Capacitor apps
 
 ## Resources
 
-- Capgo Documentation: https://capgo.app/docs
-- Capacitor Documentation: https://capacitorjs.com/docs
-- Ionic Framework: https://ionicframework.com/docs
+- Capgo: https://capgo.app
+- Capsec: https://capacitor-sec.dev
+- Capacitor: https://capacitorjs.com
+- Ionic: https://ionicframework.com
 - Konsta UI: https://konstaui.com
-- Discord Community: https://discord.gg/capgo
+- Discord: https://discord.gg/capgo
 
 ## Contributing
 
-Contributions welcome! Add new skills by creating a folder in `skills/` with:
+Add new skills by creating a folder in `skills/` with:
 - `SKILL.md` - Instructions for agents
 - `metadata.json` - Skill metadata
 
