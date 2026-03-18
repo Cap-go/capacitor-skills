@@ -19,7 +19,7 @@ Upgrade a Capacitor plugin to a newer major version.
 
 Read the current `@capacitor/core` version from `package.json` and inspect the plugin package version.
 
-Ask the user for the target version if it is not obvious from the request.
+Ask the user to confirm the exact target major version before proceeding.
 
 ### Step 2: Upgrade Sequentially
 
@@ -45,15 +45,17 @@ Review these plugin areas carefully:
 
 ### Step 4: Final Verification
 
-Run the plugin's verification workflow:
+Check whether `bun run verify` exists in `package.json` or the repository scripts.
+
+If it exists, run:
 
 ```bash
-bun install
-bunx cap sync
 bun run verify
 ```
 
-If the plugin repository uses separate iOS or Android verification commands, run those too.
+If it does not exist, run the repository's documented build, test, and example-app verification commands instead.
+
+Run the sync and build commands from the plugin's example/test app directory, not the plugin root.
 
 ## Error Handling
 

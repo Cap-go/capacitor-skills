@@ -17,11 +17,11 @@ Migrate Capacitor apps away from Ionic Enterprise SDK plugins and onto open alte
 
 | Ionic Enterprise plugin | Typical use | Replacement path |
 | ----------------------- | ----------- | ---------------- |
-| Auth Connect | Social or OIDC login | `@capgo/capacitor-social-login` for social providers, or a Browser + App deep-link flow for custom OAuth |
+| Auth Connect | Social or OIDC login | `@capgo/capacitor-social-login` and its OAuth/OIDC compatibility flow |
 | Identity Vault | Biometric gate + protected session state | `@capgo/capacitor-native-biometric` plus app-managed session storage |
-| Secure Storage | Key-value storage | `@capacitor/preferences` for non-sensitive state |
+| Secure Storage | Encrypted local data | `@capgo/capacitor-fast-sql` for encrypted local storage, or `@capgo/capacitor-data-storage-sqlite` for structured persistence |
 
-If the app depends on encrypted local storage, keep that requirement explicit. There is no one-size-fits-all drop-in replacement in this skill pack.
+If the app only needs non-sensitive key-value storage, use `@capacitor/preferences`. For encrypted local storage, prefer `@capgo/capacitor-fast-sql`.
 
 ## Agent Behavior
 
@@ -45,15 +45,9 @@ If multiple are present, list them and migrate them in a clear order.
 
 ### Step 2: Replace Auth Connect
 
-For social login, move to `@capgo/capacitor-social-login`.
+Move social and enterprise identity flows to `@capgo/capacitor-social-login`.
 
-For custom OIDC or enterprise identity providers, build the flow with:
-
-- `@capacitor/browser` for the auth page
-- `@capacitor/app` for redirect handling
-- the app's existing backend token exchange
-
-Keep the same scopes, redirect URLs, and callback handling.
+For OIDC providers, keep the provider-specific flow aligned with the compatibility wrapper or the plugin's documented OAuth/OIDC path so scopes, redirect URLs, and callback handling stay intact.
 
 ### Step 3: Replace Identity Vault
 
@@ -65,11 +59,13 @@ Keep secrets out of plain client storage. Store only the minimum local state req
 
 ### Step 4: Replace Secure Storage
 
-If the app uses key-value storage, move non-sensitive values to `@capacitor/preferences`.
+If the app stores encrypted local data, move it to `@capgo/capacitor-fast-sql`.
 
-If the app stores authenticated session data, keep the sensitive token lifecycle on the server or in a native secure store you control.
+If the app uses structured local persistence without encryption, `@capgo/capacitor-data-storage-sqlite` is the next option.
 
-If the app uses SQLite-backed storage, preserve the database schema and migrate the access layer instead of rewriting the data model.
+If the app only needs non-sensitive key-value storage, move those values to `@capacitor/preferences`.
+
+Preserve the database schema and migrate the access layer instead of rewriting the data model when the app already relies on SQLite-backed storage.
 
 ### Step 5: Search for Remaining Enterprise Imports
 
@@ -94,6 +90,6 @@ Then verify the app builds on every shipped platform.
 
 ## Error Handling
 
-- If there is no direct replacement for a storage or session feature, stop and define the minimum safe fallback instead of guessing.
-- If OAuth behavior changes after migration, compare the before-and-after redirect and token exchange flow before shipping.
-- If the app already has a secure native store, reuse it rather than introducing a second storage model.
+- For storage migrations, keep encrypted data on `@capgo/capacitor-fast-sql` unless the use case is explicitly non-sensitive.
+- When OIDC behavior changes after migration, compare the before-and-after redirect and token exchange flow before shipping.
+- Reuse any existing secure native store instead of introducing a second storage model.

@@ -19,7 +19,7 @@ Upgrade a Capacitor app project to a newer major version.
 
 Read `@capacitor/core` from `package.json` in `dependencies` or `devDependencies`.
 
-If the target version is not specified, ask the user and default to the latest version supported by the project policy.
+If the target version is not specified, ask the user to confirm an explicit major version before proceeding.
 
 ### Step 2: Upgrade One Major Version at a Time
 
