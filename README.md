@@ -25,7 +25,7 @@ A collection of **45 skills** for AI coding agents working with Capacitor, the c
 ## Installation
 
 ```bash
-bunx skills add Cap-go/capgo-skills
+npx skills add Cap-go/capgo-skills
 ```
 
 ## Available Skills
@@ -205,16 +205,16 @@ Go to **https://capgo.app** and sign up.
 ### 2. Install CLI
 
 ```bash
-bun add -g @capgo/cli
-bunx @capgo/cli@latest login
+npm install -g @capgo/cli
+npx @capgo/cli@latest login
 ```
 
 ### 3. Initialize & Deploy
 
 ```bash
-bunx @capgo/cli@latest init
-bun run build
-bunx @capgo/cli@latest bundle upload
+npx @capgo/cli@latest init
+npm run build
+npx @capgo/cli@latest bundle upload
 ```
 
 ## Security Scanning with Capsec
@@ -264,13 +264,13 @@ Add new skills by creating a folder in `skills/` with:
 Validate the pack locally with:
 
 ```bash
-bun run lint-skills
+npm run lint-skills
 ```
 
 Run the skillgrade-backed eval for the skill authoring workflow with an API key:
 
 ```bash
-ENABLE_SKILLGRADE=1 bun run lint-skills-skillgrade
+ENABLE_SKILLGRADE=1 npm run lint-skills-skillgrade
 ```
 
 ## License
