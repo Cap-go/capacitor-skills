@@ -106,8 +106,7 @@ This skill provides a comprehensive catalog of Capgo's Capacitor plugins. Use th
 
 | Plugin | Package | Description |
 |--------|---------|-------------|
-| Data Storage SQLite | `@nicholasalx/capacitor-data-storage-sqlite` | SQLite database storage |
-| Fast SQL | `@nicholasalx/capacitor-fast-sql` | High-performance SQL |
+| Fast SQL | `@capgo/capacitor-fast-sql` | Native SQLite with transactions, batch ops, encryption, BLOBs, and KeyValueStore |
 | File | `@nicholasalx/capacitor-file` | File system operations |
 | File Picker | `@nicholasalx/capacitor-file-picker` | Native file picker |
 | File Compressor | `@nicholasalx/capacitor-file-compressor` | Compress files |

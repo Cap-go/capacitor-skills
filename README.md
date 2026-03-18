@@ -9,7 +9,7 @@
 
 > Formerly `@capgo/capacitor-skills` (and `Cap-go/capacitor-skills`). Links and redirects should continue to work.
 
-A collection of **37 skills** for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
+A collection of **38 skills** for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
 
 ## Compatibility
 
@@ -120,6 +120,7 @@ bunx skills add Cap-go/capgo-skills
 |-------|-------------|
 | [cordova-to-capacitor](./skills/cordova-to-capacitor) | Migrate from Cordova/PhoneGap to Capacitor |
 | [framework-to-capacitor](./skills/framework-to-capacitor) | Integrate Next.js, React, Vue, Angular with Capacitor |
+| [sqlite-to-fast-sql](./skills/sqlite-to-fast-sql) | Migrate SQLite/SQL plugins to Fast SQL |
 | [ionic-enterprise-sdk-migration](./skills/ionic-enterprise-sdk-migration) | Replace Ionic Enterprise SDK plugins with open alternatives |
 
 ## Usage
@@ -164,6 +165,7 @@ Skills activate automatically when agents detect relevant tasks:
 - "Migrate from Cordova" → cordova-to-capacitor
 - "Convert Next.js to mobile app" → framework-to-capacitor
 - "Add Capacitor to React app" → framework-to-capacitor
+- "Migrate SQLite to Fast SQL" → sqlite-to-fast-sql
 - "Remove Ionic Enterprise SDK" → ionic-enterprise-sdk-migration
 
 ### UI/UX

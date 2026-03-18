@@ -19,9 +19,9 @@ Migrate Capacitor apps away from Ionic Enterprise SDK plugins and onto open alte
 | ----------------------- | ----------- | ---------------- |
 | Auth Connect | Social or OIDC login | `@capgo/capacitor-social-login` and its OAuth/OIDC compatibility flow |
 | Identity Vault | Biometric gate + protected session state | `@capgo/capacitor-native-biometric` plus app-managed session storage |
-| Secure Storage | Encrypted local data | `@capgo/capacitor-fast-sql` for encrypted local storage, or `@capgo/capacitor-data-storage-sqlite` for structured persistence |
+| Secure Storage | Encrypted local data | `@capgo/capacitor-fast-sql` for encrypted local storage and structured persistence |
 
-If the app only needs non-sensitive key-value storage, use `@capacitor/preferences`. For encrypted local storage, prefer `@capgo/capacitor-fast-sql`.
+If the app only needs non-sensitive key-value storage, use `@capacitor/preferences`. For encrypted local storage or structured local persistence, prefer `@capgo/capacitor-fast-sql`.
 
 ## Agent Behavior
 
@@ -61,7 +61,7 @@ Keep secrets out of plain client storage. Store only the minimum local state req
 
 If the app stores encrypted local data, move it to `@capgo/capacitor-fast-sql`.
 
-If the app uses structured local persistence without encryption, `@capgo/capacitor-data-storage-sqlite` is the next option.
+If the app uses structured local persistence, keep it on `@capgo/capacitor-fast-sql` so the encrypted and non-encrypted paths stay on the same engine.
 
 If the app only needs non-sensitive key-value storage, move those values to `@capacitor/preferences`.
 
