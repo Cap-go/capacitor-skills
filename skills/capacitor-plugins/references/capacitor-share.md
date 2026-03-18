@@ -7,8 +7,8 @@ Share content through the system share sheet.
 ## Installation
 
 ```bash
-bun add @capacitor/share
-bunx cap sync
+npm install @capacitor/share
+npx cap sync
 ```
 
 ## Usage

@@ -29,7 +29,7 @@ Use the matching command group:
 Prefer the current Capgo CLI:
 
 ```bash
-bunx @capgo/cli@latest bundle upload com.example.app --path ./dist --channel production
+npx @capgo/cli@latest bundle upload com.example.app --path ./dist --channel production
 ```
 
 Use compatibility checks before channel changes when the user is unsure whether a bundle is safe for rollout.

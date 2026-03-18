@@ -29,7 +29,7 @@ Decide whether the request is:
 Prefer the Capgo CLI:
 
 ```bash
-bunx @capgo/cli@latest organization list
+npx @capgo/cli@latest organization list
 ```
 
 Use `account id` for safe account sharing and support workflows.

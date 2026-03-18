@@ -27,8 +27,8 @@ For each major jump:
 
 1. Update `@capacitor/*` peer dependencies and native bridge code as needed.
 2. Adjust iOS and Android native project settings for the target Capacitor version.
-3. Run `bun install`.
-4. Sync or rebuild the example app with `bunx cap sync`.
+3. Run `npm install`.
+4. Run `npx cap sync` from the example or test app directory that contains `capacitor.config.*`, or rebuild that app with the repository's documented command.
 5. Verify the plugin API still works in the example app or test app.
 
 Do not skip intermediate major versions.
@@ -45,15 +45,20 @@ Review these plugin areas carefully:
 
 ### Step 4: Final Verification
 
-Check whether `bun run verify` exists in `package.json` or the repository scripts.
+Check whether `npm run verify` exists in `package.json` or the repository scripts.
 
 If it exists, run:
 
 ```bash
-bun run verify
+npm run verify
 ```
 
-If it does not exist, run the repository's documented build, test, and example-app verification commands instead.
+If it does not exist, run the repository's documented fallback checks instead:
+
+- `npm run build`
+- `npm test`
+- `npx cap sync` from the example/test app directory
+- the example app or test app build for every shipped platform
 
 Run the sync and build commands from the plugin's example/test app directory, not the plugin root.
 

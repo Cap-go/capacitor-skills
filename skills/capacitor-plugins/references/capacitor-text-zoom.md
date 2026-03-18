@@ -7,8 +7,8 @@ Change WebView text size for visual accessibility.
 ## Installation
 
 ```bash
-bun add @capacitor/text-zoom
-bunx cap sync
+npm install @capacitor/text-zoom
+npx cap sync
 ```
 
 ## Usage

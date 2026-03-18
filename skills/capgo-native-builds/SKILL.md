@@ -29,7 +29,7 @@ Use the credential workflow that matches the platform:
 Prefer the Capgo build flow:
 
 ```bash
-bunx @capgo/cli@latest build request com.example.app --platform ios --path .
+npx @capgo/cli@latest build request com.example.app --platform ios --path .
 ```
 
 Use `--platform android` for Android builds.

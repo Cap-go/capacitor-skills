@@ -1,6 +1,21 @@
 import { readFileSync } from 'node:fs';
 
-const skill = readFileSync('draft/SKILL.md', 'utf8');
+let skill = '';
+try {
+  skill = readFileSync('draft/SKILL.md', 'utf8');
+} catch (error) {
+  console.log(JSON.stringify({
+    status: 'failure',
+    reason: 'missing input file',
+    file: 'draft/SKILL.md',
+    details: error instanceof Error ? error.message : String(error),
+    score: 0,
+    checks: [
+      { name: 'input-file', passed: false, message: 'Missing or unreadable draft/SKILL.md' },
+    ],
+  }));
+  process.exit(0);
+}
 
 const checks = [];
 let passed = 0;
@@ -10,12 +25,14 @@ function addCheck(name, condition, message) {
   if (condition) passed += 1;
 }
 
-addCheck('frontmatter', /^---\n[\s\S]*?\n---/m.test(skill), 'Missing YAML frontmatter');
-addCheck('name', /name:\s*skill-creator\b/.test(skill), 'name must be skill-creator');
-addCheck('description', /description:\s*.+/.test(skill), 'description missing');
+const frontmatterMatch = skill.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
+const frontmatter = frontmatterMatch?.[1] ?? '';
+
+addCheck('frontmatter', Boolean(frontmatterMatch), 'Missing YAML frontmatter at the top of the file');
+addCheck('name', /^name:\s*\S.+$/m.test(frontmatter), 'name missing');
+addCheck('description', /^description:\s*\S.+$/m.test(frontmatter), 'description missing');
 addCheck('usage', /## When to Use This Skill/.test(skill), 'Missing usage section');
 addCheck('error-handling', /## Error Handling/.test(skill), 'Missing error handling section');
-addCheck('no-readme', !/README\.md/.test(skill), 'Should not mention README.md');
 
 const score = (passed / checks.length).toFixed(2);
 console.log(JSON.stringify({

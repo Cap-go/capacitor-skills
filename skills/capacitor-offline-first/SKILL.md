@@ -41,7 +41,7 @@ Build apps that work seamlessly with or without internet connectivity.
 ### Using Capacitor Network Plugin
 
 ```bash
-bun add @capacitor/network
+npm install @capacitor/network
 npx cap sync
 ```
 

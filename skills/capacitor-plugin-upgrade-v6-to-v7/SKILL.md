@@ -19,7 +19,7 @@ Upgrade a Capacitor plugin from version 6 to version 7.
 2. Update the peer dependency range to Capacitor 7.
 3. Review the v6 to v7 migration notes before editing native files.
 4. Update the example app if it exists.
-5. Run `bun install`.
+5. Run `npm install`.
 6. Sync and verify the example or test app.
 
 ## Error Handling

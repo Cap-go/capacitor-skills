@@ -18,8 +18,8 @@ Upgrade a Capacitor app from version 7 to version 8.
 1. Read the current `@capacitor/core` version from `package.json`.
 2. Update all `@capacitor/*` packages to the v8-compatible range.
 3. Review the v7 to v8 migration notes before editing native files.
-4. Run `bun install`.
-5. Sync with `bunx cap sync`.
+4. Run `npm install`.
+5. Sync with `npx cap sync`.
 6. Verify the iOS and Android builds.
 
 ## Error Handling

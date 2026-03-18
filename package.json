@@ -71,6 +71,6 @@
   ],
   "scripts": {
     "lint-skills": "bun scripts/lint-skills.mjs",
-    "lint-skills-skillgrade": "bunx skillgrade --ci --provider=local --smoke"
+    "lint-skills-skillgrade": "cd skills/skill-creator && bunx skillgrade --ci --provider=local --smoke"
   }
 }

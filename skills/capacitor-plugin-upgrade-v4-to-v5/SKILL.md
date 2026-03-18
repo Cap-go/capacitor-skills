@@ -19,7 +19,7 @@ Upgrade a Capacitor plugin from version 4 to version 5.
 2. Update the peer dependency range to Capacitor 5.
 3. Review the v4 to v5 migration notes before editing native files.
 4. Update the example app if it exists.
-5. Run `bun install`.
+5. Run `npm install`.
 6. Sync and verify the example or test app.
 
 ## Error Handling

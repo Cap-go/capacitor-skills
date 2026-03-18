@@ -77,7 +77,7 @@ async function main() {
     });
 
     if (result.status !== 0) {
-      process.stderr.write(result.stdout || '');
+      process.stdout.write(result.stdout || '');
       process.stderr.write(result.stderr || '');
       process.exit(result.status ?? 1);
     }

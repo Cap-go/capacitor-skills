@@ -7,8 +7,8 @@ Provides access to native Action Sheets.
 ## Installation
 
 ```bash
-bun add @capacitor/action-sheet
-bunx cap sync
+npm install @capacitor/action-sheet
+npx cap sync
 ```
 
 ## Configuration

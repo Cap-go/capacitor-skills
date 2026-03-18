@@ -7,8 +7,8 @@ Integrates Google Maps SDK into Capacitor applications.
 ## Installation
 
 ```bash
-bun add @capacitor/google-maps
-bunx cap sync
+npm install @capacitor/google-maps
+npx cap sync
 ```
 
 ## Configuration

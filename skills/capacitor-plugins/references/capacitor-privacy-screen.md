@@ -7,8 +7,8 @@ Prevents sensitive app information from appearing in app switchers/recent apps.
 ## Installation
 
 ```bash
-bun add @capacitor/privacy-screen
-bunx cap sync
+npm install @capacitor/privacy-screen
+npx cap sync
 ```
 
 ## Usage

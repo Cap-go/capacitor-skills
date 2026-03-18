@@ -7,8 +7,8 @@ Keyboard display/visibility control and event tracking.
 ## Installation
 
 ```bash
-bun add @capacitor/keyboard
-bunx cap sync
+npm install @capacitor/keyboard
+npx cap sync
 ```
 
 ## Configuration

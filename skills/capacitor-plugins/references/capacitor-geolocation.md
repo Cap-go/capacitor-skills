@@ -7,8 +7,8 @@ GPS position tracking with altitude, heading, and speed data.
 ## Installation
 
 ```bash
-bun add @capacitor/geolocation
-bunx cap sync
+npm install @capacitor/geolocation
+npx cap sync
 ```
 
 ## Configuration

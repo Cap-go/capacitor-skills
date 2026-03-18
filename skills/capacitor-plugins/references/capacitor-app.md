@@ -7,8 +7,8 @@ Handles high-level app state and events including foreground/background transiti
 ## Installation
 
 ```bash
-bun add @capacitor/app
-bunx cap sync
+npm install @capacitor/app
+npx cap sync
 ```
 
 ## Configuration

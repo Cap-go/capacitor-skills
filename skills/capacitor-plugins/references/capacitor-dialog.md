@@ -7,8 +7,8 @@ Triggers native dialog windows for alerts, confirmations, and prompts.
 ## Installation
 
 ```bash
-bun add @capacitor/dialog
-bunx cap sync
+npm install @capacitor/dialog
+npx cap sync
 ```
 
 ## Usage

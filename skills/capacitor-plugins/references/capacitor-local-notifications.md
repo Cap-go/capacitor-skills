@@ -7,8 +7,8 @@ Schedule device notifications locally without server-based push.
 ## Installation
 
 ```bash
-bun add @capacitor/local-notifications
-bunx cap sync
+npm install @capacitor/local-notifications
+npx cap sync
 ```
 
 ## Configuration

@@ -7,8 +7,8 @@ Configure style, visibility, and background color of the Status Bar.
 ## Installation
 
 ```bash
-bun add @capacitor/status-bar
-bunx cap sync
+npm install @capacitor/status-bar
+npx cap sync
 ```
 
 ## Configuration

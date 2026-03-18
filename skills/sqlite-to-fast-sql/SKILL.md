@@ -58,8 +58,8 @@ Map the old plugin calls to Fast SQL equivalents:
 Install the new package with the repository's package manager and sync native projects.
 
 ```bash
-bun add @capgo/capacitor-fast-sql
-bunx cap sync
+npm install @capgo/capacitor-fast-sql
+npx cap sync
 ```
 
 If the app ships web support, install `sql.js` for the web fallback when needed.

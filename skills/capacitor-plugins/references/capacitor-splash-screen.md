@@ -7,8 +7,8 @@ Control display and hiding of splash screen images.
 ## Installation
 
 ```bash
-bun add @capacitor/splash-screen
-bunx cap sync
+npm install @capacitor/splash-screen
+npx cap sync
 ```
 
 ## Configuration

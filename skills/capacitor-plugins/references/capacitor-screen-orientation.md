@@ -7,8 +7,8 @@ Screen orientation information and locking.
 ## Installation
 
 ```bash
-bun add @capacitor/screen-orientation
-bunx cap sync
+npm install @capacitor/screen-orientation
+npx cap sync
 ```
 
 ## Usage

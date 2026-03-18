@@ -7,8 +7,8 @@ Exposes internal device information (model, OS version, unique IDs).
 ## Installation
 
 ```bash
-bun add @capacitor/device
-bunx cap sync
+npm install @capacitor/device
+npx cap sync
 ```
 
 ## Usage

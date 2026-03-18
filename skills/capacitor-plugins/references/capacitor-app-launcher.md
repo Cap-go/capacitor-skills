@@ -7,8 +7,8 @@ Check if an app can be opened and open it via URL schemes or package names.
 ## Installation
 
 ```bash
-bun add @capacitor/app-launcher
-bunx cap sync
+npm install @capacitor/app-launcher
+npx cap sync
 ```
 
 ## Configuration

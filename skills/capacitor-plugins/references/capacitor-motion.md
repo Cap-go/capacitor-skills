@@ -7,8 +7,8 @@ Tracks accelerometer and device orientation (compass heading, etc.).
 ## Installation
 
 ```bash
-bun add @capacitor/motion
-bunx cap sync
+npm install @capacitor/motion
+npx cap sync
 ```
 
 ## Usage

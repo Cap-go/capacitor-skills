@@ -7,8 +7,8 @@ Event-based standalone JavaScript environment for executing code outside the web
 ## Installation
 
 ```bash
-bun add @capacitor/background-runner
-bunx cap sync
+npm install @capacitor/background-runner
+npx cap sync
 ```
 
 ## Configuration

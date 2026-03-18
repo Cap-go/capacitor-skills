@@ -273,7 +273,7 @@ For official Capacitor packages, follow the package-specific instructions from `
 For Capgo plugins, use:
 
 ```bash
-bun add @capgo/capacitor-<name>
+npm install @capgo/capacitor-<name>
 npx cap sync
 ```
 

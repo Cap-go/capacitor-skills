@@ -7,8 +7,8 @@ Open files and preview media on mobile devices.
 ## Installation
 
 ```bash
-bun add @capacitor/file-viewer
-bunx cap sync
+npm install @capacitor/file-viewer
+npx cap sync
 ```
 
 ## Usage

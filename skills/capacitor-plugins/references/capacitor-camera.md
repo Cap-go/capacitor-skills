@@ -7,8 +7,8 @@ Photo capture and gallery selection.
 ## Installation
 
 ```bash
-bun add @capacitor/camera
-bunx cap sync
+npm install @capacitor/camera
+npx cap sync
 ```
 
 ## Configuration

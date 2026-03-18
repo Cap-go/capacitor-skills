@@ -7,8 +7,8 @@ Opens URLs in WebView, in-app system browser, or external browser.
 ## Installation
 
 ```bash
-bun add @capacitor/inappbrowser
-bunx cap sync
+npm install @capacitor/inappbrowser
+npx cap sync
 ```
 
 ## Usage

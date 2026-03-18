@@ -7,8 +7,8 @@ Network and connectivity information.
 ## Installation
 
 ```bash
-bun add @capacitor/network
-bunx cap sync
+npm install @capacitor/network
+npx cap sync
 ```
 
 ## Usage

@@ -7,8 +7,8 @@ System clipboard API for copy/paste operations.
 ## Installation
 
 ```bash
-bun add @capacitor/clipboard
-bunx cap sync
+npm install @capacitor/clipboard
+npx cap sync
 ```
 
 ## Usage

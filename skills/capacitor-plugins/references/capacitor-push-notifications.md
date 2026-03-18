@@ -7,8 +7,8 @@ Native push notifications via FCM (Android) and APNs (iOS).
 ## Installation
 
 ```bash
-bun add @capacitor/push-notifications
-bunx cap sync
+npm install @capacitor/push-notifications
+npx cap sync
 ```
 
 ## Configuration

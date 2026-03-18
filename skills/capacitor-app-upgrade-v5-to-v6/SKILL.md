@@ -18,8 +18,8 @@ Upgrade a Capacitor app from version 5 to version 6.
 1. Read the current `@capacitor/core` version from `package.json`.
 2. Update all `@capacitor/*` packages to the v6-compatible range.
 3. Review the v5 to v6 migration notes before editing native files.
-4. Run `bun install`.
-5. Sync with `bunx cap sync`.
+4. Run `npm install`.
+5. Sync with `npx cap sync`.
 6. Verify the iOS and Android builds.
 
 ## Error Handling

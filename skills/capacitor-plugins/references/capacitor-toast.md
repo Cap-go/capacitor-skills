@@ -7,8 +7,8 @@ Display a notification popup.
 ## Installation
 
 ```bash
-bun add @capacitor/toast
-bunx cap sync
+npm install @capacitor/toast
+npx cap sync
 ```
 
 ## Usage

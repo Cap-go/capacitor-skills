@@ -79,11 +79,11 @@ Replace or remove any leftovers before continuing.
 
 ### Step 6: Clean Up and Verify
 
-Remove unused enterprise packages from `package.json`, reinstall dependencies, and sync the project:
+Remove unused enterprise packages from `package.json`, reinstall dependencies with the repository's existing package manager, and run sync from the app directory that contains `capacitor.config.*`:
 
 ```bash
-bun install
-bunx cap sync
+npm install
+npx cap sync
 ```
 
 Then verify the app builds on every shipped platform.

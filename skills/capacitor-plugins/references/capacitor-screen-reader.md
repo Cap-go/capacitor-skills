@@ -7,8 +7,8 @@ Access TalkBack/VoiceOver and text-to-speech for accessibility.
 ## Installation
 
 ```bash
-bun add @capacitor/screen-reader
-bunx cap sync
+npm install @capacitor/screen-reader
+npx cap sync
 ```
 
 ## Usage

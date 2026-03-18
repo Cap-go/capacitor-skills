@@ -7,8 +7,8 @@ Physical feedback through touch or vibration.
 ## Installation
 
 ```bash
-bun add @capacitor/haptics
-bunx cap sync
+npm install @capacitor/haptics
+npx cap sync
 ```
 
 ## Usage

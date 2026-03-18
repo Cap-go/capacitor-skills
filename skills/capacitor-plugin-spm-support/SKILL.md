@@ -75,15 +75,12 @@ Add an iOS SPM install command if the project maintains script helpers.
 
 ### Step 6: Verify
 
-Use the repository's existing package manager for dependency install.
+Install dependencies with the repository's existing package manager.
 
-Run Capacitor sync from the example or test app directory that contains `capacitor.config.*`.
-Use the repository's package manager install command, then `cd example-app` and run the matching Capacitor sync command from there.
-
-Then build that same example or test app.
+Then `cd` into the example or test app directory that contains `capacitor.config.*`, run `npx cap sync` (or the repository's equivalent runner) there, and build that same app.
 
 ## Error Handling
 
-- For Swift package resolver failures, check the target path and package dependency names first.
-- For bridged plugin registration failures, verify the class name, `identifier`, and `jsName` match the exported API.
-- For unsupported CocoaPods dependencies, keep CocoaPods for those dependencies or replace them with SPM-compatible equivalents before removing the old bridge.
+- Start with the Swift package resolver: check the target path and package dependency names first.
+- Verify bridge registration by matching the class name, `identifier`, and `jsName` against the exported API.
+- For unsupported CocoaPods dependencies, replace them with SPM-compatible packages or keep CocoaPods for that dependency.

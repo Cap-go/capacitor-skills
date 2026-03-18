@@ -38,7 +38,6 @@ bunx skills add Cap-go/capgo-skills
 | [capgo-cloud](./skills/capgo-cloud) | Coordinate Capgo builds, releases, publishing, and organization workflows |
 | [capacitor-plugins](./skills/capacitor-plugins) | Official Capacitor packages plus Capgo plugin recommendations |
 | [capacitor-best-practices](./skills/capacitor-best-practices) | Development best practices and patterns |
-| [capgo-release-workflows](./skills/capgo-release-workflows) | Coordinate live updates, builds, and publishing |
 | [capgo-live-updates](./skills/capgo-live-updates) | Deploy OTA updates instantly with Capgo |
 
 ### Security

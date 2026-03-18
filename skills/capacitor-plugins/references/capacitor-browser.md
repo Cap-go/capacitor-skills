@@ -7,8 +7,8 @@ Opens an in-app browser. Uses SFSafariViewController on iOS (OAuth-compliant).
 ## Installation
 
 ```bash
-bun add @capacitor/browser
-bunx cap sync
+npm install @capacitor/browser
+npx cap sync
 ```
 
 ## Configuration

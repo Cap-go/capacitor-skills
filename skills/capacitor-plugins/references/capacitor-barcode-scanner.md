@@ -7,8 +7,8 @@ Barcode/QR scanning using Outsystems Barcode libs.
 ## Installation
 
 ```bash
-bun add @capacitor/barcode-scanner
-bunx cap sync
+npm install @capacitor/barcode-scanner
+npx cap sync
 ```
 
 ## Configuration

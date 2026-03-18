@@ -37,7 +37,7 @@ Route specific workflows to the matching skill:
 Prefer the current CLI form:
 
 ```bash
-bunx @capgo/cli@latest doctor
+npx @capgo/cli@latest doctor
 ```
 
 ## Error Handling

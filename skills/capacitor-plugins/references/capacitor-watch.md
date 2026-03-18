@@ -7,8 +7,8 @@ Build watch interfaces in web code for display on paired Apple Watch devices. Ex
 ## Installation
 
 ```bash
-bun add @capacitor/watch
-bunx cap sync
+npm install @capacitor/watch
+npx cap sync
 ```
 
 ## Configuration

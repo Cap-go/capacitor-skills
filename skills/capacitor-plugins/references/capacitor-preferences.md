@@ -7,8 +7,8 @@ Key/value storage for lightweight persistent data. Not a database replacement.
 ## Installation
 
 ```bash
-bun add @capacitor/preferences
-bunx cap sync
+npm install @capacitor/preferences
+npx cap sync
 ```
 
 ## Configuration

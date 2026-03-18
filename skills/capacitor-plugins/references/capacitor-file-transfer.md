@@ -7,8 +7,8 @@ File upload and download with progress tracking.
 ## Installation
 
 ```bash
-bun add @capacitor/file-transfer
-bunx cap sync
+npm install @capacitor/file-transfer
+npx cap sync
 ```
 
 ## Usage

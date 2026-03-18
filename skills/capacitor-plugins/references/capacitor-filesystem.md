@@ -7,8 +7,8 @@ Node.js-like API for device file operations (read, write, delete, manage files a
 ## Installation
 
 ```bash
-bun add @capacitor/filesystem
-bunx cap sync
+npm install @capacitor/filesystem
+npx cap sync
 ```
 
 ## Configuration
