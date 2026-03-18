@@ -41,9 +41,12 @@ Requires API key with billing enabled from Google Cloud Console.
 ```typescript
 import { GoogleMap } from '@capacitor/google-maps';
 
+const mapElement = document.querySelector<HTMLElement>('#map');
+if (!mapElement) throw new Error('Map element not found');
+
 const map = await GoogleMap.create({
   id: 'my-map',
-  element: document.getElementById('map'),
+  element: mapElement,
   apiKey: 'YOUR_API_KEY',
   config: { center: { lat: 33.6, lng: -117.9 }, zoom: 8 },
 });

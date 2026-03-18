@@ -448,7 +448,7 @@ stages:
   - deploy
 
 variables:
-  NODE_VERSION: "1.0"
+  NODE_VERSION: "20"
 
 .npm-cache: &npm-cache
   cache:

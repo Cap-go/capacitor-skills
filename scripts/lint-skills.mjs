@@ -30,12 +30,24 @@ async function main() {
 
   for (const skillName of skillDirs) {
     const skillPath = path.join(skillsDir, skillName, 'SKILL.md');
+    const metadataPath = path.join(skillsDir, skillName, 'metadata.json');
     let content;
     try {
       content = await readFile(skillPath, 'utf8');
     } catch {
       errors.push(`${skillName}: missing SKILL.md`);
       continue;
+    }
+
+    try {
+      const metadata = await readFile(metadataPath, 'utf8');
+      JSON.parse(metadata);
+    } catch (error) {
+      if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
+        errors.push(`${skillName}: missing metadata.json`);
+      } else {
+        errors.push(`${skillName}: invalid metadata.json`);
+      }
     }
 
     const frontmatter = parseFrontmatter(content);

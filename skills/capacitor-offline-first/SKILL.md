@@ -119,6 +119,14 @@ npm install @capgo/capacitor-fast-sql
 npx cap sync
 ```
 
+Before using Fast SQL in production, complete the required platform setup:
+
+- iOS: allow localhost networking for the plugin transport.
+- Android: add the localhost cleartext exception required by the plugin.
+- Web: install `sql.js` if the app needs the web fallback.
+
+Use the dedicated `sqlite-to-fast-sql` skill when you need the full platform checklist.
+
 ### Database Setup
 
 ```typescript

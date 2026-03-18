@@ -16,15 +16,22 @@ npx cap sync
 ```typescript
 import { ScreenReader } from '@capacitor/screen-reader';
 
-const { value: isActive } = await ScreenReader.isEnabled();
+// Native only: iOS and Android.
+const { value } = await ScreenReader.isEnabled();
+console.log('Screen reader active:', value);
+
+// `language` is Android-only.
 await ScreenReader.speak({ value: 'Hello World', language: 'en' });
 
-ScreenReader.addListener('stateChange', ({ value }) => {
+const handle = await ScreenReader.addListener('stateChange', ({ value }) => {
   console.log('Screen reader active:', value);
 });
+
+await handle.remove();
 ```
 
 ## Notes
 
 - `isEnabled()` not available on Web.
+- `speak()` and `addListener()` are also native-only.
 - `language` parameter (ISO 639-1) is Android-only.

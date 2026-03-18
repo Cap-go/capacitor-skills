@@ -305,7 +305,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Capgo
-        run: npx @capgo/cli upload
+        run: npx @capgo/cli bundle upload
         env:
           CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
 ```
@@ -320,7 +320,7 @@ deploy:
   script:
     - npm install
     - npm run build
-    - npx @capgo/cli upload
+    - npx @capgo/cli bundle upload
   only:
     - main
   variables:

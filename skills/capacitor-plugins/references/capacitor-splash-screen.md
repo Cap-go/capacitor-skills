@@ -1,6 +1,6 @@
 # Splash Screen
 
-Control display and hiding of splash screen images.
+Control the display and hiding of the splash screen.
 
 **Platforms:** Android, iOS
 
