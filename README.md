@@ -9,7 +9,7 @@
 
 > Formerly `@capgo/capacitor-skills` (and `Cap-go/capacitor-skills`). Links and redirects should continue to work.
 
-A collection of **29 skills** for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
+A collection of **37 skills** for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
 
 ## Compatibility
 
@@ -104,7 +104,15 @@ bunx skills add Cap-go/capgo-skills
 | Skill | Description |
 |-------|-------------|
 | [capacitor-app-upgrades](./skills/capacitor-app-upgrades) | Upgrade a Capacitor app across major versions |
+| [capacitor-app-upgrade-v4-to-v5](./skills/capacitor-app-upgrade-v4-to-v5) | Upgrade a Capacitor app from v4 to v5 |
+| [capacitor-app-upgrade-v5-to-v6](./skills/capacitor-app-upgrade-v5-to-v6) | Upgrade a Capacitor app from v5 to v6 |
+| [capacitor-app-upgrade-v6-to-v7](./skills/capacitor-app-upgrade-v6-to-v7) | Upgrade a Capacitor app from v6 to v7 |
+| [capacitor-app-upgrade-v7-to-v8](./skills/capacitor-app-upgrade-v7-to-v8) | Upgrade a Capacitor app from v7 to v8 |
 | [capacitor-plugin-upgrades](./skills/capacitor-plugin-upgrades) | Upgrade a Capacitor plugin across major versions |
+| [capacitor-plugin-upgrade-v4-to-v5](./skills/capacitor-plugin-upgrade-v4-to-v5) | Upgrade a Capacitor plugin from v4 to v5 |
+| [capacitor-plugin-upgrade-v5-to-v6](./skills/capacitor-plugin-upgrade-v5-to-v6) | Upgrade a Capacitor plugin from v5 to v6 |
+| [capacitor-plugin-upgrade-v6-to-v7](./skills/capacitor-plugin-upgrade-v6-to-v7) | Upgrade a Capacitor plugin from v6 to v7 |
+| [capacitor-plugin-upgrade-v7-to-v8](./skills/capacitor-plugin-upgrade-v7-to-v8) | Upgrade a Capacitor plugin from v7 to v8 |
 
 ### Migration
 
@@ -143,6 +151,14 @@ Skills activate automatically when agents detect relevant tasks:
 ### Upgrades
 - "Upgrade a Capacitor app" → capacitor-app-upgrades
 - "Upgrade a Capacitor plugin" → capacitor-plugin-upgrades
+- "Upgrade a Capacitor app from v4 to v5" → capacitor-app-upgrade-v4-to-v5
+- "Upgrade a Capacitor app from v5 to v6" → capacitor-app-upgrade-v5-to-v6
+- "Upgrade a Capacitor app from v6 to v7" → capacitor-app-upgrade-v6-to-v7
+- "Upgrade a Capacitor app from v7 to v8" → capacitor-app-upgrade-v7-to-v8
+- "Upgrade a Capacitor plugin from v4 to v5" → capacitor-plugin-upgrade-v4-to-v5
+- "Upgrade a Capacitor plugin from v5 to v6" → capacitor-plugin-upgrade-v5-to-v6
+- "Upgrade a Capacitor plugin from v6 to v7" → capacitor-plugin-upgrade-v6-to-v7
+- "Upgrade a Capacitor plugin from v7 to v8" → capacitor-plugin-upgrade-v7-to-v8
 
 ### Migration
 - "Migrate from Cordova" → cordova-to-capacitor
