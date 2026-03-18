@@ -1,0 +1,27 @@
+# Skill Authoring Example
+
+version: "1"
+
+defaults:
+  agent: codex
+  provider: local
+  trials: 3
+  timeout: 300
+  threshold: 0.8
+
+tasks:
+  - name: fix-skill-draft
+    instruction: |
+      Rewrite `draft/SKILL.md` so it follows the skill authoring standard.
+
+      Keep the file lean, use YAML frontmatter, include a clear "When to Use This Skill" section, and add an "Error Handling" section.
+      Preserve the overall purpose of the draft, but make the metadata and structure production-ready.
+
+    workspace:
+      - src: fixtures/broken-skill/SKILL.md
+        dest: draft/SKILL.md
+
+    graders:
+      - type: deterministic
+        run: bun graders/check-skill.js
+        weight: 1

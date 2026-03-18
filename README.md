@@ -9,7 +9,7 @@
 
 > Formerly `@capgo/capacitor-skills` (and `Cap-go/capacitor-skills`). Links and redirects should continue to work.
 
-A collection of **28 skills** for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
+A collection of **29 skills** for AI coding agents working with Capacitor, the cross-platform native runtime. Skills are packaged instructions that extend agent capabilities for mobile development.
 
 ## Compatibility
 
@@ -93,6 +93,12 @@ bunx skills add Cap-go/capgo-skills
 | [capacitor-plugin-spm-support](./skills/capacitor-plugin-spm-support) | Add Swift Package Manager support to a plugin |
 | [cocoapods-to-spm](./skills/cocoapods-to-spm) | Migrate to Swift Package Manager |
 
+### Authoring
+
+| Skill | Description |
+|-------|-------------|
+| [skill-creator](./skills/skill-creator) | Create and validate new skills with progressive disclosure |
+
 ### Upgrades
 
 | Skill | Description |
@@ -129,6 +135,10 @@ Skills activate automatically when agents detect relevant tasks:
 - "Publish to App Store" → capacitor-app-store
 - "Submit to Play Store" → capacitor-app-store
 - "Add SPM support to a plugin" → capacitor-plugin-spm-support
+
+### Authoring
+- "Create a new skill" → skill-creator
+- "Validate a skill" → skill-creator
 
 ### Upgrades
 - "Upgrade a Capacitor app" → capacitor-app-upgrades
@@ -209,6 +219,18 @@ Learn more: **https://capacitor-sec.dev**
 Add new skills by creating a folder in `skills/` with:
 - `SKILL.md` - Instructions for agents
 - `metadata.json` - Skill metadata
+
+Validate the pack locally with:
+
+```bash
+bun run lint-skills
+```
+
+Run the skillgrade-backed eval for the skill authoring workflow with an API key:
+
+```bash
+ENABLE_SKILLGRADE=1 bun run lint-skills-skillgrade
+```
 
 ## License
 

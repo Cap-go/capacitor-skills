@@ -1,7 +1,7 @@
 {
   "name": "@capgo/capgo-skills",
   "version": "1.1.0",
-  "description": "28 agent skills for Capacitor mobile development",
+  "description": "29 agent skills for Capacitor mobile development",
   "keywords": [
     "capacitor",
     "capacitor-skills",
@@ -50,6 +50,11 @@
     "cocoapods-to-spm",
     "cordova-to-capacitor",
     "framework-to-capacitor",
+    "skill-creator",
     "ionic-enterprise-sdk-migration"
-  ]
+  ],
+  "scripts": {
+    "lint-skills": "bun scripts/lint-skills.mjs",
+    "lint-skills-skillgrade": "bunx skillgrade --ci --provider=local --smoke"
+  }
 }
